@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Multimedia Website</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Multimedia Website</h1>
+        <button class="menu-toggle">☰ Menu</button>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#videos">Local Videos</a></li>
+                <li><a href="#youtube">YouTube Videos</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <h2>Welcome to My Media Site</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vero culpa quo suscipit esse, consequuntur, vel, voluptas repellendus eos veniam laborum expedita dignissimos ea tempora sapiente aut inventore ipsa. Ea nemo impedit voluptate exercitationem tenetur cum distinctio a pariatur, voluptates, adipisci fugiat, laudantium iste corporis sit! Libero incidunt esse facere.</p>
+        </section>
+
+        <!-- Local Video Section -->
+        <section class="videos" id="videos">
+            <h2> Blank Videos</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="sample-video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                 <video controls>
+                    <source src="sample-video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                 <video controls>
+                    <source src="sample-video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                 <video controls>
+                    <source src="sample-video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </section>
+
+        <!-- YouTube Videos Section -->
+        <section class="youtube-videos" id="youtube">
+            <h2>Watch On YouTube Videos</h2>
+            <div class="youtube-grid">
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/QzI3Dm6nb5M?si=uG-XLb3XKCh5EoCn" title="Video 1" allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/iIyLRe5PmNM?si=-2SFG8zzwq-YkccQ" title="Video 2" allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/S0QM4utHF4w?si=6BlzNVe4TdKUdjEB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iIyLRe5PmNM?si=P5aenw4O_Za9zNHG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section class="gallery" id="gallery">
+            <h2>Image Gallery</h2>
+            <div class="image-grid">
+                <img src="image1.jpg" alt="Sample Image 1">
+                <img src="image2.jpg" alt="Sample Image 2">
+                <img src="image3.jpg" alt="Sample Image 3">
+                <img src="image4.jpg" alt="Sample Image 4">
+            </div>
+        </section>
+        <!-- Contact Section -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> example@email.com</p>
+            <p><strong>Phone:</strong> +92 300 1234567</p>
+            <p><strong>Location:</strong> Multan, Pakistan</p>
+        </div>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Multimedia Website</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
