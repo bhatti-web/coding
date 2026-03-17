@@ -30,6 +30,7 @@ header {
     color: #fff;
     padding: 1rem;
     display: flex; 
+    flex-direction:column;
     justify-content: space-between; 
     align-items: center; 
     position: relative;
@@ -45,7 +46,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 nav a {
@@ -61,13 +62,7 @@ nav a:hover {
 
 /* Mobile Menu Button */
 .menu-toggle {
-    display: block; 
-    font-size: 1.2rem;
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    position: static; 
+    display: none;
 }
 
 
@@ -254,13 +249,14 @@ footer {
     h2 { font-size: 1.3rem; }
 
     nav ul {
-        display: none; 
+         display: none; /* Shuru mein chhupa hua */
         flex-direction: column;
         position: absolute;
-        top: 100%; /* Header ke bilkul neeche khulega */
+        top: 100%; /* Header ke bilkul niche */
         left: 0;
         width: 100%;
         background-color: #6a0572;
+        padding: 1rem 0;
         z-index: 1000;
     }
     
@@ -270,20 +266,29 @@ footer {
 
     nav ul li {
         padding: 10px 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
     }
+     header {
+        flex-direction: row;      /* Mobile pe ek hi line (horizontal) */
+        justify-content: space-between; /* Heading left, Button right */
+        padding: 1rem 1.5rem;
+        position: relative;
+     }
  header h1 {
         font-size: 1.1rem; 
-        max-width: 70%; 
+   text-align: left;
         margin: 0;
     }
 
     
          .menu-toggle {
-        font-size: 1rem; 
-        padding: 5px;
-        white-space: nowrap; 
-             cursor:pointer;
-    }
+        display: block; /* Mobile pe button dikhayen */
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+         }
     
 
     .video-container,
