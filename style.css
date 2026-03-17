@@ -47,7 +47,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-top:9px;
+    margin-top: 9px;
 }
 nav{
     margin:5px;
@@ -261,7 +261,7 @@ footer {
         background-color: #6a0572;
         padding: 1rem 0;
         z-index: 1000;
-        margin-top:9px;
+        margin-top: 10px;
     }
     
    nav ul.show {
@@ -292,7 +292,7 @@ footer {
         border: none;
         color: white;
         cursor: pointer;
-             margin-left:20px;
+             margin-left: 20px;
          }
     
 
@@ -319,5 +319,6 @@ footer {
     nav ul {
         display: flex;
         gap: 1.5rem;
+        margin-top: 10px;
     }
 }
