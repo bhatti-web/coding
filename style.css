@@ -271,7 +271,7 @@ footer {
      header {
         flex-direction: row;      /* Mobile pe ek hi line (horizontal) */
         justify-content: space-between; /* Heading left, Button right */
-        padding: 1rem 1.5rem;
+        padding: 1.7rem 1.5rem;
         position: relative;
      }
  header h1 {
