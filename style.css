@@ -26,13 +26,14 @@ iframe {
 
 /* Header */
 header {
-     background-color: #6a0572;
+    background-color: #6a0572;
     color: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;;
+    padding: 1rem;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: relative;
+    width: 100%; 
 }
 
 header h1 {
@@ -256,14 +257,13 @@ footer {
         display: none; 
         flex-direction: column;
         position: absolute;
-        top: 100%; /* Appears right under the header */
+        top: 100%; /* Header ke bilkul neeche khulega */
         left: 0;
         width: 100%;
         background-color: #6a0572;
-        padding: 1rem 0;
-        text-align: center;
         z-index: 1000;
     }
+    
    nav ul.show {
         display: flex;
     }
@@ -271,15 +271,20 @@ footer {
     nav ul li {
         padding: 10px 0;
     }
-
-    .menu-toggle {
-        display: block; 
-        font-size: 2rem;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
+ header h1 {
+        font-size: 1.1rem; 
+        max-width: 70%; 
+        margin: 0;
     }
+
+    
+         .menu-toggle {
+        font-size: 1rem; 
+        padding: 5px;
+        white-space: nowrap; 
+             cursor:pointer;
+    }
+    
 
     .video-container,
     .youtube-grid .video-item,
