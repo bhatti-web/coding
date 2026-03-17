@@ -26,15 +26,18 @@ iframe {
 
 /* Header */
 header {
-    background-color: #6a0572;
+     background-color: #6a0572;
     color: #fff;
     padding: 1rem 2rem;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;;
 }
 
 header h1 {
-    margin-bottom: 0.5rem;
-    text-align: center;
+     font-size: 1.5rem;
+    margin: 0;
 }
 
 nav ul {
@@ -251,16 +254,33 @@ footer {
     h2 { font-size: 1.3rem; }
 
     nav ul {
-        display: none;
+        display: none; 
         flex-direction: column;
-        text-align: center;
-        background-color: #444;
+        position: absolute;
+        top: 100%; /* Appears right under the header */
+        left: 0;
+        width: 100%;
+        background-color: #6a0572;
         padding: 1rem 0;
+        text-align: center;
+        z-index: 1000;
+    }
+   nav ul.show {
+        display: flex;
     }
 
-    nav ul.show { display: flex; }
+    nav ul li {
+        padding: 10px 0;
+    }
 
-    .menu-toggle { display: block; }
+    .menu-toggle {
+        display: block; 
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
 
     .video-container,
     .youtube-grid .video-item,
@@ -276,5 +296,14 @@ footer {
     .youtube-videos,
     .contact {
         padding: 1.5rem 1rem;
+    }
+}
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        gap: 1.5rem;
     }
 }
