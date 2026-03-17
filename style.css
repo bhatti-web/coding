@@ -319,6 +319,6 @@ footer {
     nav ul {
         display: flex;
         gap: 1.5rem;
-        margin-top: 10px;
+        margin-top: 12px;
     }
 }
