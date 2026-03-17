@@ -47,6 +47,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    margin-top:9px;
 }
 nav{
     margin:5px;
@@ -260,6 +261,7 @@ footer {
         background-color: #6a0572;
         padding: 1rem 0;
         z-index: 1000;
+        margin-top:9px;
     }
     
    nav ul.show {
